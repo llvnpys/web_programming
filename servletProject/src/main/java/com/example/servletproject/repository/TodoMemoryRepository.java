@@ -33,5 +33,10 @@ public enum TodoMemoryRepository implements TodoRepository {
                 collect(Collectors.toList());
     }
 
+    @Override
+    public TodoVO findById(Long tno) {
+        return store.get(tno);
+    }
+
 
 }

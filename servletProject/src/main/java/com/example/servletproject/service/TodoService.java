@@ -15,7 +15,7 @@ public enum TodoService {
 
     // 등록
     public void register(TodoDTO todoDTO) {
-
+        
     }
 
 
@@ -31,6 +31,14 @@ public enum TodoService {
         return result;
 
     }
+
+    // 조회
+    public TodoVO get(Long tno){
+
+        return TodoMemoryRepository.INSTANCE.findById(tno);
+    }
+
+
 
     // 수정
 

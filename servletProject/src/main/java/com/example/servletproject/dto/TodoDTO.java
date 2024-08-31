@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class TodoDTO {
     public TodoDTO() {
+
     }
 
     public TodoDTO(Long tno, String title, LocalDate dueDate, boolean finished) {

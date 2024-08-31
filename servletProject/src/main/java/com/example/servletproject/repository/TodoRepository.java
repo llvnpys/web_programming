@@ -9,4 +9,6 @@ public interface TodoRepository {
     void save(TodoDTO todoDTO);
 
     List<TodoVO> findAll();
+
+    TodoVO findById(Long tno);
 }
