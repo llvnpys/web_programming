@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1 th:text="${list}"></h1>
+  <div th:with ="num1 = ${10}, num2=${20}">
+    <h1 th:text="${num1+ num2}"></h1>
+  </div>
+
+  <ol>
+      <li th:each="str : ${list}" th:text="${str}"></li>
+  </ol>
+
+  <a th:href="@{/hello(name = 'nayyunsung', age = 27)}">go to hello</a>
+
+</body>
+</html>
